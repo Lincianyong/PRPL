@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 // import CardArticle from "./_components/CardArticle";
+import Link from "next/link";
 import { IoSearchSharp } from "react-icons/io5";
 
 export default function Home() {
@@ -76,7 +77,9 @@ export default function Home() {
         <div className="mt-6">
             <div className="grid grid-cols-2 gap-3 w-full max-w-lg">
             {filteredArticles.map((article) => (
-                <div key={article.id} className="border-[1px] w-full border-main_blue rounded-lg p-3 relative">
+                // eslint-disable-next-line react/jsx-key
+                <Link href={`/articles/${article.id}`} key={article.id}>
+                <div className="border-[1px] w-full border-main_blue rounded-lg p-3 relative">
                 <Image
                     src={article.image}
                     height={200}
@@ -86,7 +89,8 @@ export default function Home() {
                 />
                 <h2 className="text-[14px] font-bold text-main_blue mb-1 leading-tight">{article.title}</h2>
                 <p className="text-dark_grey text-[10px]">{article.desc}</p>
-                </div>              
+                </div>  
+                </Link>            
         ))}
         </div>
         </div>
