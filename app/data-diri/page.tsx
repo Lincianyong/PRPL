@@ -29,7 +29,7 @@ export default function DataDiri() {
               <input
                 type="date"
                 placeholder="10/10/2000"
-                className="font-semibold text-light_grey"
+                className="font-semibold text-light_grey w-full"
               />
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function DataDiri() {
                 <input
                     type="text"
                     placeholder="170"
-                    className="font-semibold"
+                    className="font-semibold w-full"
                 />
                 </div>
             </div>
@@ -57,7 +57,7 @@ export default function DataDiri() {
                 <input
                     type="text"
                     placeholder="55"
-                    className="font-semibold"
+                    className="font-semibold w-full"
                 />
                 </div>
           </div>
@@ -73,7 +73,7 @@ export default function DataDiri() {
               <input
                 type="text"
                 placeholder="135"
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function DataDiri() {
               <input
                 type="text"
                 placeholder="5,8"
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
 
@@ -100,7 +100,7 @@ export default function DataDiri() {
               <input
                 type="text"
                 placeholder="185"
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
             

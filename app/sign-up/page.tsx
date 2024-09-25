@@ -63,7 +63,7 @@ const SignUpPage: React.FC = () => {
                 placeholder="Display Name"
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ const SignUpPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@ const SignUpPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ const SignUpPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>

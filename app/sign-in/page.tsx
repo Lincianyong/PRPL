@@ -55,7 +55,7 @@ const SignInPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ const SignInPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
             <div className="text-right pt-2 text-main_blue">Lupa Password</div>
