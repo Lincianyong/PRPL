@@ -51,7 +51,7 @@ const SignUpPage: React.FC = () => {
         </div>
 
         {/* Input fields */}
-        <div onSubmit={handleSignUp} className="flex-col space-y-4 mt-10">
+        <form onSubmit={handleSignUp} className="flex-col space-y-4 mt-10">
           <div className="space-y-2">
             <p className="">
               <strong>Nama Lengkap</strong>
@@ -63,7 +63,7 @@ const SignUpPage: React.FC = () => {
                 placeholder="Display Name"
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ const SignUpPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
@@ -95,42 +95,29 @@ const SignUpPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="font-semibold"
-              />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <p className="">
-              <strong>Konfirmasi Password</strong>
-              <strong className="text-red">*</strong>
-            </p>
-            <div className="border-[1px] border-light_grey p-2 rounded-lg">
-              <input
-                type="password"
-                placeholder="Konfirmasi Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                className="font-semibold"
+                className="font-semibold w-full"
               />
             </div>
           </div>
 
           {/* button */}
           <div className="pt-6">
-            <div className="text-center w-full p-3 rounded-lg bg-main_blue text-white">
-              <button type="submit" disabled={loading}>
-                {loading ? "Loading..." : "Daftar"}
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="text-center w-full p-3 rounded-lg bg-main_blue text-white"
+            >
+              {loading ? "Loading..." : "Daftar"}
+            </button>
           </div>
 
-          {/* forget passowrd */}
+          {/* sign in link */}
           <p className="font-normal text-center">
-            <strong>Belum pernah terdaftar</strong>{"  "}<strong className="text-main_blue">Daftar sekarang!</strong>
+            <strong>Sudah terdaftar?</strong>{" "}
+            <strong className="text-main_blue">Masuk sekarang!</strong>
           </p>
-        </div>
-        {message && <p className="message">{message}</p>}
+        </form>
+        {message && <p className="message mt-4 text-center">{message}</p>}
       </div>
     </div>
   );
